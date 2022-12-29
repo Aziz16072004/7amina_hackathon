@@ -1,0 +1,125 @@
+:root{
+    --mainColor:#f7a220;
+    --grayColor : #3f3e40;
+    --backGround : #ffffff;
+    /* --fontColor : rgb(4, 113, 9); */
+    --fontColor : #4070f4;
+}
+.navbar{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+.nav ul{
+    display: flex;
+    position: relative;
+    
+}
+li{
+    list-style: none;
+    margin: 0 10px;
+    
+}    
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 21px;
+    padding: 10px 20px;
+
+}
+.menu{
+    display: none;
+}
+/* img{
+    position: absolute;
+    top: 6px;
+    right: 79px;
+    width: 67px;
+} */
+a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 16px;
+
+}
+.logo , .nav{
+    padding: 70px   ;
+    transition: .5s;
+}
+.logo h1{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+
+}
+.humberger{
+    display: none;
+    margin-top: 15px;
+    width: 50PX;
+    height: 50px;
+}
+.humberger .line{
+    width: 100%;
+    height: 5px;
+    margin-bottom: 8px;
+    background-color: white;
+}
+
+
+
+@media only screen and (max-width: 950px){
+    
+    
+}
+@media only screen and (max-width: 1550px){
+    .logo , .nav{
+        padding: 40px;
+    }
+} 
+@media only screen and (max-width: 1300px){
+    .logo , .nav{
+        padding: 20px;
+    }
+} 
+@media (max-width: 920px) {
+    .nav.active{
+        height: 450px;
+        opacity: 1;
+        z-index: 5;
+    }
+    .nav{
+        padding-top: 90px;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        opacity: 0;
+        overflow: hidden;
+        background-color: var(--fontColor);
+    }
+
+    .nav ul {
+        display: block;
+        text-align: center;
+
+    }
+    .nav ul li {
+        margin-bottom: 25px;
+    }
+
+
+
+    .menu{
+        display: block;
+    }
+    .humberger{
+        display: block;
+        margin-right: 30px;
+    }
+}
